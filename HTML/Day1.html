@@ -1,0 +1,306 @@
+<!DOCTYPE html>  <!--It represents the document type based on which the browser loads the content-->
+<html lang="en"> <!--The HTML element is the root of an HTML page. All other elements must be descendants of this element.-->
+<!--lang attribute is used to define the language used-->
+    <head> <!--The head element contains the meta information about the webpage-->
+        <title>Day 1</title> <!--This tag specifies a title for the web page (which is shown in the browser)-->
+        <!--A favicon is a small image displayed next to the page title in the browser tab.
+        It should be written in the head section and the image should be in .ico format.-->
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> 
+
+        <!--The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.-->
+        <meta charset="UTF-8">  <!--Define the character set used-->
+
+        <meta name="keywords" content="HTML, CSS">  <!--Define keywords for search engines-->
+
+        <meta name="description" content="Challenge">  <!--Define a description of your web page-->
+
+        <meta name="author" content="V-I-S-H-N-U"> <!---Provide the author's name-->
+
+        <meta http-equiv="refresh" content="30">    <!--Refreshes every 30 seconds-->   
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Make the website responsive by adjusting its width-->
+
+    </head>
+    <body> <!-- The body of an HTML page contains the visible page content-->
+
+        <h1 id="here">First Heading</h1>  <!-- The h1 tag defines a heading -->
+        <h2>Second Heading</h2> <!-- The h2 tag defines a sub-heading --> 
+        <h3>Third Heading</h3>  <!--- The h3 tag is used to define a third level heading-->
+        <h4>Fourth Heading</h4> <!-- The h4 tag defines a fourth level heading-->
+        <h5>Fifth Heading</h5>  <!-- The h5 tag defines a fifth level heading.-->
+        <h6>Sixth Heading</h6>  <!--- The h6 tag defines a sixth level heading.-->
+
+        <p>This is a paragraph</p>  <!--This tag is used to define the paragraph, also called empty element-->
+        
+        <a  href="destination_link">destination_name</a>    <!--- This tag creates hyperlinks--->
+
+        <br> <br>   <!-- This tag is used for line break -->
+
+        <!--This tag is used to embed images into web pages. Image description is showed if the image has not been loaded.-->
+
+        <!--If you type ctrl+u on keyboard in any website you can see the source code of that page.-->
+
+        <!--Attributes provides additional information about the tag.For example, href(hypertext reference),src(source)...
+            It is a name value-pair.-->
+        <img  src="image_path" alt="Image Description" width="100px" height="100px"/>
+
+        <br><br>
+
+        <!--Two ways to specify URL in src-->
+         <!--It is an absolute src type where we reference to an external link source-->
+        <img src="https://www.google.com/images/image.png" alt="Absolute src">
+
+        <br><br>
+
+         <!--It is relative src type, if it starts without / then it is relative to
+         current page it is suggested as it will not break even if the domain changes, if it starts with / it is relative to domain. -->
+        <img src="/images/image.png" alt="Relative src">
+
+        <!--Style attribute is used to provide styles to an element.-->
+        <p style="color: red;">Style Attribute</p> 
+
+        <!--This attribute is used to give extra information about the element,if you mouse over the element it will show the value-->
+        <p title="I am title attribute">Title attribute</p> 
+        
+        <!--Search engines use the headings to index the structure and content of your web pages.
+            The headings will have a fixed size, if you want to change then use font-size in the style attribute.-->
+        <h1 style="font-size: 50px;">Font-Size</h1>
+        
+        <!--The horizontal rule tag provides a thematic break in the page. Used to separate contents.-->
+        <hr>
+        
+        <!--In p tag the extra spaces and extra lines are removed, if you want the preformatted text you have to use pre tag-->
+        <pre>hello!        I am        pre tag</pre>
+
+        <!--propery:value is syntax of style attribute. Here background-color is used to change the background color to red.
+            The color property defines the color of the text.-->
+        <p style="background-color: red;color: white;">Yay! I am white located at red.</p>
+
+        <!--The fnt-family attribute defines the font of the element.-->
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">I am verdana</p>
+
+        <!--font-size defines the text size.
+            p tag normally gives space to the content and it usually starts in a new line-->
+        <p style="font-size:500%;">I am Big</p>
+
+        <!--text-align property defines the horizontal text alignment -->
+        <p style="text-align:center;">Centered paragraph.</p>
+
+        <!--HTML Formating elements to display special types of texts.-->
+        <!--Both gives visual output same, but bold tag is a physical tag & strong tag is a logical tag. Basically when bold tag
+             is used, it only makes the words thicker... But when strong tag is used, it makes the word thicker & also tells the
+              Browser that the text inside "strong" tag is important.-->
+        <b>I am BOLD</b>
+
+        <br><br>
+
+        <strong>I am STRONG</strong>
+
+        <br><br>
+
+        <!--<i> Tag is like putting something in italics just for looks, while <em> Tag is for adding real emphasis or importance to
+             the text, indicating that it should be read with more attention.-->
+        <i>I am ITALIC</i>
+
+        <br><br>
+
+        <em>I am EMPHASIZED</em>
+
+        <br><br>
+
+        <mark>I am MARKED</mark>
+
+        <br><br>
+
+        <small>I am SMALL</small>
+
+        <br><br>
+
+        <del>I am DELETED</del>
+
+        <br><br>
+
+        <ins>I am INSERTED</ins>
+
+        <br><br>
+
+        <p>I am <sub>SUBSCRIPT</sub></p>
+
+        <p>I am <sup>SUPERSCRIPT</sup></p>
+
+        <!--<blockquote> element defines a section that is quoted from another source.-->
+        <blockquote cite="google.com">Hi i am different.</blockquote>
+
+        <!--<q> tag defines a short quotation.-->
+        <q>I have a quotation.</q>
+
+        <br><br>
+
+        <!--<abbr> tag defines an abbreviation or an acronym.
+           Use the title attribute to show the description for the abbreviation/acronym when you mouse over the element. -->
+        <abbr title="Cascading Style Sheet">CSS</abbr>
+
+        <!--this tag is used to provide the contact information of an author,usually renders in italics.-->
+        <address>
+            123 green street,<br>
+            newyork,<br>
+            z0123<br>
+        </address>
+
+        <!--Defines the title of a work.-->
+        <p>My job is <cite>Software Developer.</cite></p>
+
+        <!--BDO stands for Bi-Directional Override. It changes the text direction accordingly.-->
+        <bdo dir="rtl">This is right to left</bdo>
+
+        <!--Provides a solid border with tomato color-->
+        <h1 style="border: 2px solid tomato;">I have a border with tomato color</h1>
+
+        <!--In rgba a stands for alpha which defines the opacity and value ranges from 0.0 to 1.0-->
+        <h1 style="background-color:rgb(255, 99, 71);">i have color</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">i have color with 50% transparency</h1>
+
+        <!--hsl stands for hue,saturation,lightness-->
+        <h1 style="background-color:hsl(9, 100%, 64%);">i have color</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">i have color with 50% transparency</h1>
+
+        <!--The target attribute specifies where to open the linked document.
+        _self - Default. Opens the document in the same window/tab as it was clicked
+        _blank - Opens the document in a new window or tab
+        _parent - Opens the document in the parent frame
+        _top - Opens the document in the full body of the window-->
+        <a href="https://www.google.com/" target="_blank">google</a>
+
+        <br><br>
+
+        <!--Use mailto: inside the href attribute to create a link that opens the user's email program-->
+        <a href="mailto:someone@e.com">Send email</a>
+
+        <br><br>
+
+        <a href="https://www.google.com/" title="Google here">Guess me</a>
+
+        <br><br>
+
+        <!--It jumps to the same page element which has an id value of "here"-->
+        <a href="#here" >Touch to jump</a>
+
+        <img src="image.jpg" alt="Workplace" usemap="#images">
+
+        <!--<map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+        The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.
+        The name attribute must have the same value as the <img>'s usemap attribute .
+        -->
+        <map name="images">
+            <area shape="rect" coords="34,44,270,350" alt="1" href="1.html">
+            <area shape="rect" coords="290,172,333,250" alt="2" href="2.html">
+            <area shape="circle" coords="337,300,44" alt="3" href="3.html">
+            <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="4.html">
+        </map>
+
+        <!--Background-image property places the image to the background of the element.
+        background-repeat:no-repeat define sto not to repeat the backgraound.
+        To make sure the entire element is always covered, set the background-attachment property to fixed
+        If you want the background image to cover the entire element, you can set the background-size property to cover.
+        If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%:-->
+        <p style="background-image: url('image.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;"></p>
+
+        <!--The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute.
+             This way the browser can choose the image that best fits the current view and/or device.
+        Each <source> element has a media attribute that defines when the image is the most suitable.-->
+        <picture>
+            <source media="(min-width: 650px)" srcset="image1.jpg">
+            <source media="(min-width: 465px)" srcset="image2.jpg">
+            <img src="image3.jpg">
+        </picture>
+
+        <!--tr defines the table row.
+            td defines the table cells.content is put here.
+            th defines the cell heading.It is bold and centered by default.
+            border-collapse: collapse; border-collapse eliminates the double border.
+            caption tag provides the heading for the entire table.
+            cell padding is the space between edges and contents.works inside the th and td elements
+            cell spacing is the space between two cells. worrks inside the table tag
+            colspan is used to merge two columns
+            rowspan is used to merge two rows
+            tr:nth-child(even) selects even number of rows tr
+            td:nth-child(even), th:nth-child(even)  selects even number of columns td
+            Use the :hover selector on tr to highlight table rows on mouse over
+            The <colgroup> element should be used as a container for the column specifications.
+            Each group is specified with a <col> element.
+            The span attribute specifies how many columns that get the style.
+            The style attribute specifies the style to give the columns.
+            You can hide columns with the visibility: collapse property: used in colgroup->col->style tags-->
+        <table border="1" style="border-spacing: 100px;">
+            <colgroup>
+                <col span="2" style="background-color: lightblue;">
+            </colgroup>
+            <caption>A Table</caption>
+            <tr>
+                <th>Sl no</th>
+                <th>Age</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td style="padding: 20px;" colspan="2">1</td>
+                <td rowspan="2">20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>26</td>
+            </tr>
+        </table>
+
+        <!--This tag creates an unordered list of items.
+            list-style-type provides the style for the bullets, by default it is circle.-->
+        <ul>
+            <li style="list-style-type: disc;">Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <!--This tag creates an ordered list of items.Type defines the type of bullet points ex:integer,Roman letter....
+            start specifies from where to start counting.-->
+        <ol type="1" start="20">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <!--The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term-->
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+          
+        <!--A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+        A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+        Two commonly used block elements are: <p> and <div>.
+        An inline element does not start on a new line.
+        An inline element only takes up as much width as necessary.-->
+
+        <div style="background-color: purple;">
+            <h1>I am a DIV</h1>
+        </div>
+
+        <p>I am a <span style="background-color: lightgray;">SPAN</span></p>
+
+        <!--If you have a <div> element that is not 100% wide, and you want to center-align it, set the CSS margin property to auto.
+            display: inline-block; can make the div an inline element.
+            -->
+            <!--iframe is used to display a web page within a web page.-->
+        <iframe src="url" height="200" width="300" title="description"></iframe>
+
+        <!--An iframe can be used as the target frame for a link.
+            The target attribute of the link must refer to the name attribute of the iframe-->
+        <iframe src="https://www.facebook.com" name="description1" title="Iframe"></iframe>
+        <p><a href="https://www.google.com" target="description1">W3Schools.com</a></p>
+
+
+    </body>
+</html>
