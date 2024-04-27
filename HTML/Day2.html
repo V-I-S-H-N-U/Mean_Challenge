@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 2</title>
+</head>
+<body>
+    <!--Forms collect data from users.form  elements are used to create forms.-->
+    <form action="Day1.html" method="post" autocomplete="on" novalidate> 
+        <!--The form's "action" attribute specifies where to send the form-data when the form is submitted. -->
+        <!--method attribute specifies the HTTP method (GET or POST) to be used when submitting the form-->
+        <!--autocomplete is a Boolean attribute that controls whether the browser should autocomplete the input fields based on previous results.-->
+        <!--novalidate attribute is a boolean attribute that when specified, indicates that the form should not be validated -->
+        <!--input element is a form control that allows user input.
+                            type attribute specifies the type of input field. -->
+        <label for="text">Enter a text</label>
+        <input id="text" type="text"> 
+
+        <br><br>
+        <!--label binds an <input> element with a label.
+             The "for" attribute of the <label> tag should be equal to the "id"-->
+        <label for="but">Click the button</label>
+        <input id="but" type="button">
+
+        <br><br>
+
+        <input id="check" type="checkbox">
+        <label for="check">Check me</label>
+
+        <br><br>
+
+        <label for="mail">Enter the email</label>
+        <!--name and value attributes give information about the text entered by the user.
+            They can be accessed on the server side using the request object in languages like PHP or ASP.NET.
+            If there's no name specified, it will not be accessible through JavaScript.-->
+        <input id="mail" type="email" name="mail" value="mail">
+
+        <br><br>
+
+        <label for="pass">Enter a password</label>
+        <!--placeholder attribute provides a hint that describes the expected value in the input field.-->
+        <!--pattern attribute specifies a regular expression that the input field must match.
+                If the pattern does not match, the browser displays an error message. -->
+        <input type="password" placeholder="password" pattern="[A-Za-z]{3}">
+
+        <br><br>
+
+        <input id="rad" type="radio">
+        <label for="rad">Check me</label>
+
+        <br><br>
+
+        <label for="dep">Choose department:</label>
+        <!-- The select element represents a drop-down list.-->
+        <select id="dep" name="department" size="3" multiple>
+            <!--multiple     allows selecting more than one option at once.
+                 required    makes sure that the user fills out this field before submitting the form.
+                 disabled    prevents users from interacting with the input.
+                 readonly    displays the value but does not allow changing it.
+                 autofocus   automatically focuses on this input when the page loads.
+             -->
+            <!--size specifies how many options can be visible at once (default is 1).--->
+            <!--The option elements represent the items in the dropdown menu.-->
+            <option value="cse">cse</option>
+            <option value="me">me</option>
+            <option value="ce">ce</option>
+            <option value="eee">eee</option>
+            <option value="ec">ec</option>
+        </select>
+
+        <br><br>
+
+        <!--The textarea element represents the multiline textbox or simply a box to enter large amounts of text-->
+        <!--rows specifies the visible number of lines in a text area. cols specifies the visible width of a text area.-->
+        <textarea name="textar" rows="10" cols="10">
+            I am a textarea.
+        </textarea>
+
+        <br><br>
+
+        <!--fieldset groups related elements together under a common title.
+              legend provides a caption for the group and defines a label for the group.
+          -->
+        <fieldset>
+            <legend>detais:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="lname"><br><br>
+          </fieldset>
+
+        <br><br>
+
+        <!--datalist creates a drop-down list for the user to choose from.-->
+        <!--option elements inside datalist are used to provide suggestions for an input control.-->
+        <!-- list attribute of the <input> element, must refer to the id attribute of the <datalist> element.-->
+        <input list="weather">
+        <datalist id="weather">
+            <option value="sunny">
+            <option value="rainy">
+            <option value="windy">
+            <option value="autumn">
+            <option value="snowy">
+        </datalist>
+
+        <br><br>
+
+        <!--step attribute specifies the interval at which results are submitted while refining-->
+        <label for="num">enter numbers</label>
+        <input type="number" id="num" name="number" step="2">
+
+        <br><br>
+
+        <!--reset button resets all form inputs to their initial values-->
+        <input type="reset" value="reset">
+
+        <br><br>
+
+        <!--image defines an image as a submit button.-->
+        <input type="image" src="im.png" alt="Submit" width="48" height="48">
+
+        <br><br>
+
+        <!--file upload allows users to select one or more files to be uploaded to a server--->
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+
+        <br><br>
+
+        <!--defines a button for submitting the form data-->
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <br><br>
+
+    <!--video tag is used to embed video content in a webpage. It may contain one or more audio/visual resources for playback.-->
+    <!--controls in video and audio tags allow control over media playback, such as volume adjustments and seeking to different points-->
+    <!--source in video  tag specifies the URL of the movie to play -->
+    <!--autoplay attribute causes the video to start playing as soon as it is ready-->
+    <!--muted attribute prevents the audio from being audible, but still loads and plays it-->
+
+    <video width="320" height="240" controls autoplay muted>
+        <source src="video.mp4" type="video/mp4">
+        <!--track specifies text tracks for <audio> or <video> elements.-->
+        <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+
+
+    <br><br>
+
+    <!--audio is used to play an audio file on a web page.-->
+    <audio controls>
+        <source src="horse.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
