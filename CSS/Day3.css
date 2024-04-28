@@ -1,0 +1,43 @@
+/*A CSS rule consists of a selector and a declaration block.*/
+/*3 types of css sheets-inline,internal,external*/
+p{
+    color: navy; /*The text color of all <p> elements on the page will be red */
+    text-align: center; /*All <p> elements will have their text aligned in the middle */
+    border: 2px dashed tomato; /*border shorthand specifies all border values in one*/
+}
+
+/**CSS Background properties**/
+.background > p {
+    background-color: green;   /*The backgraound color of p is set to lightgrey*/
+    opacity: 0.1; /*Opacity specifies the transparency of the color. It applies for the entire element*/
+}
+
+.background > h2 {
+    background-color: rgba(156, 20, 20, 0.2); /*if you not want to apply opacity to entire element use rgba*/
+}
+
+.background1 h1{
+    background-image: url(../image/background.png);  /*Background image can be specified using url() function*/
+    background-repeat: no-repeat;   /*Specify whether background image should repeat or not*/
+                                    /*repeat-x is used If the image above is repeated only horizontally and repeat-y if vertically*/
+    background-position: right; /*Position where the background appears*/
+    background-attachment: scroll; /*fixed means that it will stay at the same place even if scrolling*/
+                                /*default is scroll means that it will scroll with the rest of the page*/
+}
+
+.background1 p{
+    background: #ffffff url("../image/background.png") no-repeat left; /*Background property can take multiple values.*/
+}
+
+.border{
+    border-style: inset dashed solid outset; /*border-style property defines the style of the border line.*/
+    border-width: 6px; /*It sets the thickness of the border line.*/
+    border-color: blueviolet; /*This property sets the color of the border line.*/
+    border-radius: 10%; /*Rounds the corners of the box model by specifying the radius value.*/
+    margin: 20px;   /*Adds space around the element.*/
+    width: 300px; /*Sets the width of an element.*/
+    box-sizing: border-box; /*Includes padding and border in the element's total width and height*/
+    max-width: 300px;   /*sets maximum width of an element. If the size specified exceeds the available space, then it becomes applicable*/
+}
+
+
