@@ -1,0 +1,62 @@
+.outline{
+    width: 50%;
+    border: 10px solid green;
+    outline-style: dashed; /*outline style defines the type of outline to be drawn*/
+    outline-color: red;    /*outline color specifies the color of the outline*/
+    outline-width: 10px;       /*outline width determines the thickness of the outline*/
+    outline-offset: 5px;          /*outline offset is used to set the spacing between the text and the outline.*/
+    text-align: center;
+    margin: auto;
+}
+.text{
+    color: white;
+    background-color: black;
+    text-align: justify;
+    text-align-last: center;    /*This property is used to set the last line of a block of text to be justified*/
+    direction: rtl;     /*  direction property sets the direction of the content in an element */
+    unicode-bidi: bidi-override;       /*unicode-bidi property is used to set the bidirectional override on an element*/
+    vertical-align: super;     /*The vertical-align property is used to align inline elements vertically within a line.*/
+    text-decoration-line: line-through;    /*The text-decoration-line property is used to set or remove one or more decorations to text*/
+    text-decoration-style: solid;      /*text-decoration-style is used to set the style of the line that is used*/
+    text-decoration-color: red;    
+    text-decoration-thickness: 5px;
+    text-transform: capitalize;
+    text-indent: 100px;    /*The text-indent CSS property indents the first line in a block.*/
+    letter-spacing: 5px;       /* The letter-spacing CSS property specifies the space between the characters in a text */
+    line-height: 1;         /* The line-height shorthand property specifies the height of a line.*/
+    word-spacing: 10px;    /*The word-spacing property specifies the space between words and phrases in a text*/
+    white-space: pre;         /*white-space property is used to specify how whitespace inside a block is handled.*/
+    text-shadow: 3px 3px 5px red;      /*The text-shadow property adds shadow to text.*/
+}
+.links a{
+    text-decoration: none;
+    background-color: aqua;
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: center;
+}
+.links a:link{
+    color: red;
+}
+.links a:visited{
+    color: blue;
+}
+.links a:hover{
+    color: green;
+    background-color: purple;
+}
+.links a:active{
+    color: yellow;
+    background-color: purple;
+}
+.overflow{
+    background-color: chocolate;
+    overflow: scroll;
+}
+.pseudo ::marker{   /*marker pseudo-element represents the marker for list items (<li>) and defines its style.*/
+    color: aqua;
+}
+.pseudo ::selection{ /* The ::selection pseudo-class represents the selection that is made by the user. */
+    color: blue;
+    background: cadetblue;
+}
