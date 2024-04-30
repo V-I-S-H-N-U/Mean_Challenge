@@ -1,0 +1,38 @@
+.round{
+    border: 2px solid tomato;
+    border-radius: 20px;
+    padding: 20px;
+}
+.round1{
+    border: 2px solid green;
+    border-image: url(../image/background.png) 30 round;
+    padding: 20px;
+}
+.round2{
+    background-image: url(../image/background.png),url(../image/background1.png);
+    background-position: right-bottom,left-top;
+    background-repeat: no-repeat,repeat;
+    background-size: contain,cover;
+    height: 200px;
+}
+.round3{
+    background-color: transparent;
+    color: tomato;
+    border: 2px solid currentColor;
+}
+.round4{
+    padding: 50px;
+    background-image: linear-gradient(red,yellow);
+}
+.round5{
+    padding: 50px;
+    background-image: radial-gradient(red,yellow);
+}
+.round6{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    background-image: repeating-conic-gradient(red 10%,yellow 20%,green 20%,blue 10%);
+    border-radius: 50%;
+}
