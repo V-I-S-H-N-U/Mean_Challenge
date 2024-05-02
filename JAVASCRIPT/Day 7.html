@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1>Hi i am a header</h1>
+    <p id="body"></p>
+    </div>
+    <div style="display: flex;justify-content: center;align-items: center;">
+    <button type="button" onclick="document.getElementById('body').style.color='red'">Magic</button>
+    <button type="button" onclick="document.getElementById('body').style.color='black'">Magic</button>
+    <button type="button" onclick="window.print()">Print</button>
+    </div>
+    <p id="para"></p>
+    <script>
+        document.getElementById('body').innerHTML = "I am a paragraph";
+        document.write('File Ended')
+        window.alert("First day of javascript")
+        console.log(5+6)
+        let x,y,z;
+        x = 10;
+        y = 20;
+        z = x + y;
+        document.getElementById('para').innerHTML="The value of z is " + z +".";
+    </script>
+
+</body>
+</html>
