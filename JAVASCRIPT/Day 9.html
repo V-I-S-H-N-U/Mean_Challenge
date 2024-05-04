@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9</title>
+</head>
+<body>
+    <p id="sample" ></p>
+    <p id="sample1"></p>
+    <button onclick="this.innerHTML = Date()"> Time</button>
+    <script>
+        let x;
+        x  = 1;
+        x = "hello";
+        let y = 52e-0;
+        let z = 52e3;
+        const fruits = ["apple","grapes","oranges"]
+        const depart  = {class:"cse", divi:"a"}
+        typeof x
+        let output = out(6,2);
+        function out(x,y){
+            z = x**y;
+            return "Output is "+ z +".";
+        }
+        document.getElementById("sample").innerHTML = output;
+        document.getElementById("sample1").innerHTML = "I am studying " + depart.class + " at division " + depart["divi"] + "."
+
+
+    </script>
+</body>
+</html>
