@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10</title>
+</head>
+<body>
+    <script>
+        let str = "hello    !     ";
+        let length = str.length;
+        let pos = str.charAt(3);
+        let pos1 = str.charCodeAt(3);
+        let pos2 = str.at(5);
+        let pos3 = str[4];
+        let str1 = "Apple, Banana, Grapes";
+        let pos4 = str1.slice(2,5);
+        let pos5 = str1.substr(2,5);
+        let pos6 = str.toLowerCase();
+        let pos7 = str.toUpperCase();
+        let pos8 = str.concat(" ",str1);
+        let pos9 = str.trim();
+        let pos10 = str.trimStart();
+        let pos11 = str.trimEnd();
+        let str2 = "5";
+        let pos12 = str2.padStart(4,"lol")
+        let str3 = 5;
+        let pos13 = str3.toString();
+        let pos14 = str.padEnd(4,"x");
+        let pos15 = str.repeat(3);
+        let pos16 = str.replace("!","Hai")
+        let pos17 = str.replaceAll("hello!","hai");
+        let pos18 = str1.indexOf("Grapes");
+        let pos19 = str.lastIndexOf("s");
+        let pos20 = str1.match("e");
+        document.write(length,pos,pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,
+        typeof(pos13),typeof(str3),pos14,pos15,pos16,pos17,pos18,pos19,pos20);
+
+    </script>
+</body>
+</html>
